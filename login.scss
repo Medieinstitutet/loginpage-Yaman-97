@@ -1,0 +1,140 @@
+// variables
+$primary-color: #0267a1;
+$primary-color-dark: #03466d;
+$secoundary-color: #96ad32;
+$error-color: rgb(184, 23, 23);
+$border-radius: 5px;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-image: url(https://images.pexels.com/photos/1762851/pexels-photo-1762851.jpeg?cs=srgb&dl=pexels-ann-h-1762851.jpg&fm=jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Nunito", sans-serif;
+}
+
+main {
+  position: relative;
+  top: 10vh;
+  margin: auto;
+  height: 70vh;
+  width: 40vw;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: $border-radius;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.form-hidden {
+  display: none;
+}
+.form-massage-error {
+  color: $error-color;
+}
+
+.form-input {
+  padding: 0.7rem;
+  width: 100%;
+  border-radius: $border-radius;
+  outline: none;
+  border: none;
+  background-color: rgb(204, 197, 197);
+  color: $primary-color;
+  &:hover,
+  &:focus {
+    background-color: rgb(231, 226, 226);
+    outline: solid 1px $primary-color-dark;
+  }
+  transition: all 0.3s ease;
+}
+
+.form-input-error {
+  outline: solid 1px $error-color;
+}
+
+.input-massage-error {
+  color: $error-color;
+  margin-top: 0.3rem;
+  visibility: hidden;
+}
+button {
+  width: 70%;
+  background-color: $primary-color-dark;
+  color: white;
+  font-weight: bolder;
+  border: none;
+  outline: none;
+  border-radius: $border-radius;
+  padding: 0.5rem;
+  cursor: pointer;
+
+  &:hover {
+    background-color: $primary-color;
+  }
+  transition: all 0.3s ease;
+}
+
+.form-link {
+  cursor: pointer;
+  text-decoration: none;
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.form-massage {
+  visibility: hidden;
+}
+.logedin {
+  position: absolute;
+  top: 40vh;
+  height: 20vh;
+  width: 100vw;
+  margin: auto;
+  display: flex;
+
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  justify-content: space-evenly;
+  background-color: white;
+  display: none;
+  font-size: 2rem;
+  button {
+    width: 30%;
+  }
+}
+
+footer {
+  height: 5vh;
+  position: fixed;
+  bottom: 0;
+  width: 100vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  background-color: $primary-color-dark;
+  color: white;
+  p {
+    a {
+      color: white;
+    }
+  }
+}
+#formMassage {
+  display: flex;
+  align-self: center;
+  justify-content: center;
+  text-align: center;
+}

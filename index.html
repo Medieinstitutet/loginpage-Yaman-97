@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>log in</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="login.css" />
+    <script src="login.js" defer></script>
+  </head>
+  <body>
+    <main class="container ">
+
+        <!-- log in form -->
+
+
+      <form class="form " id="loginForm">
+        <h1 class="form-title">Log in</h1>
+        <p class="form-massage form-massage-error" id="formMassage">
+          Incorrect user inofrmation
+        </p>
+        <section class="form-input-group">
+          <input
+            class="form-input "
+            type="text"
+            id="userNameLogin"
+            placeholder="User name"
+          />
+          <p id="incorrectUserNameLogin" class="input-massage-error">Incorrect username</p>
+          <input
+            class="form-input "
+            type="password"
+            placeholder="password"
+            id="passwordLogin"
+            autofocus
+          />
+          <p id="incorrectPasswordLogin" class="input-massage-error">Incorrect password</p>
+        </section>
+        <button type="submit" id="submitLogin">log in</button>
+        <p class="form-text">
+          <a id="forgotPasswordLink" class="form-link" href="#"
+            >forgot your password?</a
+          >
+        </p>
+        <p class="form-text">
+          <a id="creatAccountLink" class="form-link" href="#"
+            >Dont have account?sign up</a
+          >
+        </p>
+      </form>
+
+
+      <!-- creat account form -->
+
+      <form class="form form-hidden" id="creatAccountForm">
+        <h1 class="form-title">Creat Account</h1>
+        <p  id="creatAccountP" class="form-massage form-massage-error ">
+           Fill correct inofrmation</p>
+        <section class="form-input-group">
+
+            <input
+            class="form-input"
+            type="text"
+            id="userNameSignup"
+            placeholder="User name"
+          />
+          <p id="incorrectUserName" class=" input-massage-error  ">Incorrect username</p>
+          <input
+          class="form-input "
+          type="password"
+          id="passwordSignup"
+          placeholder="password"
+          autofocus
+        />
+        <p id="incorrectPassword" class="input-massage-error ">Incorrect password</p>
+        
+          <input
+            class="form-input "
+            type="email"
+            id="emailSignup"
+            placeholder="Email"
+            
+          />
+          <p id="incorrectEmail" class="input-massage-error ">Incorrect email</p>
+
+         
+          </section>
+        <button id="submitCreatAccount" type="submit">Creat account</button>
+ 
+        </p>
+        <p class="form-text">
+            <a id="loginInsteadLink" class="form-link" href="#"
+              >Already have account? log in</a
+            >
+      </form>
+
+      <!-- forgot password -->
+      <form class="form form-hidden" id="forgotPasswordForm">
+        <h3 class="form-title">  Reset password</h3>
+          <p>
+            Enter your email to reset your password
+          </p>
+        <input
+            class="form-input"
+            type="email"
+            placeholder="Email address"
+          />
+          <button id="submitResetPassword" type="submit"> Submit</button>
+          <p class="form-text">
+            <a id="backToLogin" class="form-link" href="#"
+              >Back to log in page</a
+            >
+     
+      </form>
+      
+    </main>
+    <article class="logedin" id="logedin">
+        <p id="logedinP"> </p>
+        <button id="logoutButton" type="submit"> Log out</button>
+
+    </article>
+    <footer>
+        <p> Copyrights &copy; 2021</p>
+        <p><a href="#">Contact us</a></p>
+    </footer>
+  </body>
+</html>
